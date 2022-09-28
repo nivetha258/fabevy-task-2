@@ -5,15 +5,18 @@
 }
 .document{
 	background-color:#c1c1c1;
-	padding:30px 70px;
 	line-height:1.3;
 	font-family:rubik,sans-serif;
 }
-.resume{
-	padding:20px 30px;
-	background-color:white
+.container{
+	width:1200px;
+	margin:0 auto;
+	padding:10px 20px;
+	background-color:white;
 }
-
+a{color:gray;
+	text-decoration:none;
+}
 /*-----divi1 starts---------------*/
 .div1{display:flex;
 	align-items:center;
@@ -30,25 +33,25 @@
 img{
 	width:100%;
 	height:100%;
-	border-radius:50%
-	
+	border-radius:50%	
 }
 .name{
-	padding-left:50px;
-	width:100%;
+	flex-grow:1;
+	padding-left:20px;
 }
 .name li{
 	display:inline-block;
 	padding-left:50px;	
 }
-.name li:nth-child(1){padding-left:0}
-
+.name li:nth-child(1){
+	padding-left:0;
+}
+.name li:nth-child(1) a{
+	color:black;
+}
 .div1 h2{border-bottom:solid gray 1px;
 }
- a:hover{color:red;}
- a{color:gray;
-	text-decoration:none;
-}
+a:hover{color:red} 
 /*-----divi1 ends---------------*/
 /*-----divi2 starts---------------*/
 
@@ -116,7 +119,6 @@ td{
 	padding-left:50px;
 }
 
-
 tr:nth-child(even){background-color:#d3d3d369;
 }
 td:nth-child(4){width:100px}
@@ -146,9 +148,8 @@ tbody tr:hover{background-color:lightgreen;
 	padding-left:20px;
 	margin:15px 0px;
 }
-/*-----certification ends---------------*/
-
 .projects h3{color:black;}
+/*-----certification ends---------------*/
 /*-----footer starts---------------*/
 .rights {
 		display:inline-block;
@@ -156,20 +157,20 @@ tbody tr:hover{background-color:lightgreen;
 		padding-left:10px;
 		margin-left:10px;
 }
-.media-flex{
-	display:flex;
-	flex-wrap:wrap;
-	align-items:space-around;
+.media li{display:inline-block;
+		padding:10px 10px;
 }
-.media-flex a{
-	font-size: 25px;
-	width:35px;
-	height:35px;
+.media a{
+	font-size: 20px;
+	width:30px;
+	height:30px;
 	display: inline-block;
 	color: black;
 	border:solid 2px;
 	border-radius:50%;
 	text-align:center;
 }
+
+.media  a:hover{color:red}
 
 /*-----footer ends---------------*/
